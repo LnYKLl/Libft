@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:37:01 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:50:29 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:56:48 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strcmp(const char *s1, const char *s2)
 	return (s1[i] - s2[i]);
 }
 /*
-int main(void)
+int	main(void)
 {
 	printf("Value: %d\n", ft_strcmp("Hello", "Hello"));
 }

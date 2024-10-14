@@ -6,19 +6,18 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:04:52 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:06:11 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:56:52 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int i;
-	
-	i = 0;
+	int	i;
 
-	while(s[i] != (char)c)
+	i = 0;
+	while (s[i] != (char)c)
 	{
 		if (s[i] == '\0')
 			return (0);
@@ -27,11 +26,15 @@ char *ft_strchr(const char *s, int c)
 	return ((char *)s + i);
 }
 /*
-int main(void)
+int	main(void)
 {
-	char *s = "Vincent";
-	char c = 'c';
-	char *p = ft_strchr(s, c);
-	printf("Value : %s", p);	
+	char	*s;
+	char	c;
+	char	*p;
+
+	s = "Vincent";
+	c = 'c';
+	p = ft_strchr(s, c);
+	printf("Value : %s", p);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:47:32 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 12:43:39 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:56:27 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
 
 int	main(void)
 {
