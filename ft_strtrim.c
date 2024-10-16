@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 12:28:56 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 15:47:15 by lkiloul          ###   ########.fr       */
+/*   Created: 2024/10/16 15:18:00 by lkiloul           #+#    #+#             */
+/*   Updated: 2024/10/16 15:51:19 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	char	*t;
-
-	i = ft_strlen(s);
-	t = malloc(i);
-	if (!t)
-		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		t[i] = s[i];
-		i++;
-	}
-	return (t);
+///A reflechir..    
 }
