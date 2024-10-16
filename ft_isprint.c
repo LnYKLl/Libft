@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:17:25 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 12:44:00 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:22 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isprint(int i)
 		return (0);
 	return (1);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("Value : %d", ft_isprint(40));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:37:30 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 12:20:33 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:05 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (t);
 }
-/*
-int	main(void)
-{
-	char	*t;
-
-	t = ft_calloc(8, 1);
-	printf("Value : %s", t);
-}
-*/

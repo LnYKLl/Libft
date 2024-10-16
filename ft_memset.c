@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:54:46 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:56:56 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:38 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ void	*ft_memset(void *b, int c, size_t n)
 	}
 	return (b);
 }
-/*
-int	main(void)
-{
-	char	str[50] = "Coucouuuu";
-
-	printf("Value : %s", ft_memset(str, 'a', 5));
-}
-*/

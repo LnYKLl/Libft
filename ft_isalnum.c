@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:39:09 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 12:43:52 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:09 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,3 @@ int	ft_isalnum(char str)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("Value : %d", ft_isalnum('0'));
-}
-*/

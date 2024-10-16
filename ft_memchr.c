@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 07:15:11 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 07:44:21 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:29 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char	str[] = "Hello World!";
-	char	*ptr;
-
-	ptr = ft_memchr(str, 'W', 12);
-	if (ptr)
-		printf("Character found: %c\n", *ptr);
-	else
-		printf("Character not found\n");
-	return (0);
-}
-*/

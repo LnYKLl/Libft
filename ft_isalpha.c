@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:03:09 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 12:43:53 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:13 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,3 @@ int	ft_isalpha(char str)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("value : %d", ft_isalpha('.'));
-}
-*/

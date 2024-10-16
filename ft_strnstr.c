@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 08:53:15 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 10:48:31 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:57:03 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char	*s;
-	char	*p;
-
-	s = "Coucou Je suis la";
-	p = "";
-	printf("Value : %s", ft_strnstr(s, p, 8));
-}
-*/

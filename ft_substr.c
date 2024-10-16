@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 15:04:52 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 13:42:42 by lkiloul          ###   ########.fr       */
+/*   Created: 2024/10/16 13:09:15 by lkiloul           #+#    #+#             */
+/*   Updated: 2024/10/16 13:57:12 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	i;
+	unsigned int	i;
+	unsigned int	k;
+	char			*f;
 
 	i = 0;
-	while (s[i] != (char)c)
-	{
-		if (s[i] == '\0')
-			return (0);
+	k = 0;
+	while (s[i])
 		i++;
+	if (i < start)
+		return (NULL);
+	if ((size_t)start + len > i)
+		return (NULL);
+	f = malloc(len + 1);
+	while ((size_t)k < len)
+	{
+		f[k] = s[start + k];
+		k++;
 	}
-	return ((char *)s + i);
+	f[k] = '\0';
+	return (f);
 }

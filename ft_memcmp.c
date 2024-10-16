@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 08:06:32 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 10:48:19 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:31 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ int	ft_memcp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char	*s;
-	char	*p;
-
-	s = "Coucou";
-	p = "Coupou";
-	printf("Value : %d", ft_memcp(s, p, 6));
-}
-*/

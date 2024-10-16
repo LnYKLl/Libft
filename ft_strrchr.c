@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:31:09 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:56:22 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:57:08 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return ((char *)s + k);
 }
-/*
-int	main(void)
-{
-	char *s = "Vincecnt";
-	char c = 'c';
-	char *p = ft_strrchr(s, c);
-	printf("Value : %s", p);}
-*/

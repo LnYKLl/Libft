@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:28:56 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 12:34:26 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:48 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strdup(const char *s)
 	}
 	return (t);
 }
-/*
-int	main(void)
-{
-	char *s = "Hello, World!";
-	char *t = ft_strdup(s);
-	printf("%s\n", t);
-	return (0);
-}
-*/

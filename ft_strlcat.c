@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:17 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:56:44 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:42:51 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ size_t	ft_strlcat(char *dst, char *src, size_t n)
 	}
 	return (i);
 }
-/*
-int	main(void)
-{
-	char	str[50] = "Coucouuuu";
-	char	str2[50] = "Coucouuuu";
-
-	printf("Value : %lu\n", ft_strlcat(str, "Hello", 3));
-	printf("Value : %s\n", str);
-	printf("Value : %lu\n", ft_strlcat(str2, "Hello", 5));
-	printf("Value : %s\n", str2);
-}
-*/

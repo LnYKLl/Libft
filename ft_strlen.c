@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:47:32 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:56:27 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 13:43:07 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,4 @@ int	ft_strlen(char *str)
 	while (str[i] != '\0')
 		i++;
 	return (i);
-}
-
-int	main(void)
-{
-	printf("value : %d", ft_strlen("Coucouuuu"));
 }
