@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/14 16:55:57 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/16 11:38:32 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 # include <stdio.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 int		ft_isalnum(char str);
 int		ft_isalpha(char str);
