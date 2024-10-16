@@ -1,40 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 08:06:32 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 10:48:19 by lkiloul          ###   ########.fr       */
+/*   Created: 2024/10/16 10:17:23 by lkiloul           #+#    #+#             */
+/*   Updated: 2024/10/16 10:49:13 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcp(const void *s1, const void *s2, size_t n)
+int	ft_atoi(const char *src)
 {
-	size_t	i;
+	int	i;
+	int	v;
+	int	s;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (i < n)
+	v = 0;
+	s = 1;
+	while (src[i] == ' ' || src[i] == '\t' || src[i] == '\r' || src[i] == '\n'
+		|| src[i] == '\v' || src[i] == '\f')
+		i++;
+	if (src[i] == '-')
 	{
-		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		s *= -1;
 		i++;
 	}
-	return (0);
+	if (src[i] == '+')
+		i++;
+	while (src[i] >= '0' && src[i] <= '9')
+	{
+		v = v * 10 + src[i] - '0';
+		i++;
+	}
+	v = v * s;
+	return (v);
 }
 /*
 int	main(void)
 {
-	char	*s;
-	char	*p;
-
-	s = "Coucou";
-	p = "Coupou";
-	printf("Value : %d", ft_memcp(s, p, 6));
+	printf("Value : %d", ft_atoi("      -329987"));
 }
 */
