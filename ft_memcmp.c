@@ -6,13 +6,13 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 08:06:32 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 13:42:31 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/17 15:09:19 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
 

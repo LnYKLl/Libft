@@ -1,26 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 11:54:46 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/17 13:43:17 by lkiloul          ###   ########.fr       */
+/*   Created: 2024/10/17 13:22:30 by lkiloul           #+#    #+#             */
+/*   Updated: 2024/10/17 14:53:12 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n)
+char **ft_split(char const *s, char c)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)s)[i] = (unsigned char)c;
-		i++;
-	}
-	return (s);
+    s = "s";
+    c = 'c';
 }

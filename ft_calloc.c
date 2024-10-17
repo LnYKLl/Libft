@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:37:30 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 13:42:05 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/17 15:01:00 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*t;
-	int				i;
+	size_t			i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -27,8 +27,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	while (i < nmemb * size)
 	{
-		t[i] = '0';
+		t[i] = 0;
 		i++;
 	}
 	return (t);
 }
+/*
+int	main(void)
+{
+}
+*/

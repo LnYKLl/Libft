@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 15:18:35 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/17 15:24:09 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,9 @@ int		ft_strlen(char *str);
 void	*ft_memset(void *b, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
-size_t	ft_strlcpy(char *dst, char *src, size_t n);
-size_t	ft_strlcat(char *dst, char *src, size_t n);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+size_t	ft_strlcpy(char *dst, const char *src, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t n);
 int		ft_toupper(int c);
 int		ft_tolower(int i);
 char	*ft_strchr(const char *s, int c);
@@ -42,5 +43,14 @@ int		ft_atoi(const char *src);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+void	ft_bzero(void *s, size_t n);
+void ft_putchar_fd(char c, int fd);
+char *ft_itoa(int n);
+void ft_putendl_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
+void ft_putstr_fd(char *s, int fd);
+char **ft_split(char const *s, char c);
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif

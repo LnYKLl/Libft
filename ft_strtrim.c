@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:18:00 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 15:51:19 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/17 14:53:59 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-///A reflechir..    
+    s1 = "s1";
+    set = "set";
 }

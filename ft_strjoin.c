@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:36:17 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 15:06:09 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/17 14:37:01 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int				j;
 	unsigned char	*t;
 
-	i = ft_strlen(s1);
-	k = ft_strlen(s2);
+	i = ft_strlen((char *)s1);
+	k = ft_strlen((char *)s2);
 	j = 0;
 	t = ft_calloc(i + k, sizeof(char));
 	if (!t)
@@ -37,5 +37,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j++;
 	}
 	t[i + j] = '\0';
-	return (t);
+	return ((char *)t);
 }
