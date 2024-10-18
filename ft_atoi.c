@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:17:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/16 13:56:55 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/18 13:29:13 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,12 @@ int	ft_atoi(const char *src)
 	while (src[i] == ' ' || src[i] == '\t' || src[i] == '\r' || src[i] == '\n'
 		|| src[i] == '\v' || src[i] == '\f')
 		i++;
-	if (src[i] == '-')
+	if (src[i] == '-' || src[i] == '+')
 	{
-		s *= -1;
+		if (src[i] == '-')
+			s *= -1;
 		i++;
 	}
-	if (src[i] == '+')
-		i++;
 	while (src[i] >= '0' && src[i] <= '9')
 	{
 		v = v * 10 + src[i] - '0';
