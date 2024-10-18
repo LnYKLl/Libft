@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:36:17 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/17 14:37:01 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/18 14:33:43 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = ft_strlen((char *)s1);
 	k = ft_strlen((char *)s2);
 	j = 0;
-	t = ft_calloc(i + k, sizeof(char));
+	t = ft_calloc(i + k + 1, sizeof(char));
 	if (!t)
 		return (NULL);
-	while (s1[j])
+	while (s1[j] != '\0')
 	{
 		t[j] = s1[j];
 		j++;
 	}
 	j = 0;
-	while (s2[j])
+	while (s2[j] != '\0')
 	{
 		t[i + j] = s2[j];
 		j++;
