@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:28:43 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/18 10:05:51 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/18 10:49:49 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	unsigned char *ds;
-	const unsigned char *sr;
+	unsigned char		*ds;
+	const unsigned char	*sr;
 
 	ds = (unsigned char *)dst;
 	sr = (const unsigned char *)src;
