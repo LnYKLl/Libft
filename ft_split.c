@@ -6,14 +6,13 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:52:05 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/21 16:59:24 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/22 12:39:14 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-static int	ft_wordlen(const char *s, char c)
+int	ft_wordlen(const char *s, char c)
 {
 	int	i;
 
@@ -23,7 +22,7 @@ static int	ft_wordlen(const char *s, char c)
 	return (i);
 }
 
-static int	ft_wordcount(const char *s, char c)
+int	ft_wordcount(const char *s, char c)
 {
 	int	count;
 	int	word;
@@ -44,7 +43,7 @@ static int	ft_wordcount(const char *s, char c)
 	return (count);
 }
 
-static char	**ft_freemem(char **words, int j)
+char	**ft_freemem(char **words, int j)
 {
 	int	i;
 
@@ -71,7 +70,7 @@ char	**ft_putwords(char const *s, char **words, char c)
 		if (s[i] != c)
 		{
 			word_len = ft_wordlen(&s[i], c);
-			words[j] = (char *)malloc((word_len + 1) * sizeof(char));
+			words[j] = (char *)ft_calloc(word_len + 1, sizeof(char));
 			if (!words[j])
 				return (ft_freemem(words, j));
 			ft_strlcpy(words[j], &s[i], word_len + 1);
@@ -91,7 +90,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	words = (char **)malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
+	words = (char **)ft_calloc(ft_wordcount(s, c) + 1, sizeof(char *));
 	if (!words)
 		return (NULL);
 	return (ft_putwords(s, words, c));
