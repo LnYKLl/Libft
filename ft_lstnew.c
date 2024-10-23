@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 11:37:30 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/23 14:57:36 by lkiloul          ###   ########.fr       */
+/*   Created: 2024/10/23 15:40:00 by lkiloul           #+#    #+#             */
+/*   Updated: 2024/10/23 16:13:23 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned char	*t;
-	size_t			i;
+	t_list *list;
 
-	if (nmemb == 0 || size == 0)
+	list = malloc(sizeof(t_list));
+
+	if (!list)
 		return (NULL);
-	if (nmemb * size > 2147483647)
-		return (NULL);
-	t = malloc(nmemb * size);
-	i = 0;
-	if (!t)
-		return (NULL);
-	while (i < nmemb * size)
-	{
-		t[i] = 0;
-		i++;
-	}
-	return (t);
+
+	list->content = content;
+	list->next = NULL;
+
+	return (list);
 }
-/*
-int	main(void)
-{
-void * p;
-p = ft_calloc(0, 0);
-printf("Value : %p", p);
-}
-*/

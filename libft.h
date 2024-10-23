@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/23 10:30:01 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 15:57:47 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,11 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strtrim(char const *s1, char const *set);
 
+typedef struct  s_list
+{
+    void    *content;
+    struct s_list   *next;
+}   t_list;
+
+t_list *ft_lstnew(void * content);
 #endif

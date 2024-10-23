@@ -34,6 +34,8 @@ ft_substr.c \
 ft_tolower.c \
 ft_toupper.c
 
+SRCS_B = ft_lstnew.c
+
 OBJS    = ${SRCS:.c=.o}
 OBJS_B  = ${SRCS_B:.c=.o}
 INCS    = includes

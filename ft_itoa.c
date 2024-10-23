@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:23:44 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/23 13:48:18 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 16:03:35 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_itoa(int n)
 	int		j;
 	char	*str;
 	long	ln;
-    
+
 	j = ft_count(n);
 	if (!n)
 		return ("0");
