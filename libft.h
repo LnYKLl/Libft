@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/18 16:24:53 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 10:30:01 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void ft_putstr_fd(char *s, int fd);
 char **ft_split(char const *s, char c);
 void ft_striteri(char *s, void (*f)(unsigned int, char*));
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int ft_strncmp(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strtrim(char const *s1, char const *set);
 
 #endif

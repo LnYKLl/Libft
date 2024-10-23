@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:17 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/21 14:41:37 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/22 14:03:52 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 		dst[i + k] = src[k];
 		k++;
 	}
-	if (i + k < n)
-		dst[i + k] = '\0';
+	dst[i + k] = '\0';
 	return (i + j);
 }

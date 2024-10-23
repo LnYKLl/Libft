@@ -6,11 +6,57 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:23:44 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/17 14:52:07 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 13:48:18 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_itoa(int n)
+#include "libft.h"
+
+int	ft_count(long n)
 {
-    return(n);
+	int	count;
+
+	count = 0;
+	if (!n)
+		return (0);
+	if (n == 0)
+		return (count);
+	if (n < 0)
+	{
+		n *= -1;
+		count++;
+	}
+	while (n != 0)
+	{
+		count++;
+		n /= 10;
+	}
+	return (count);
+}
+
+char	*ft_itoa(int n)
+{
+	int		j;
+	char	*str;
+	long	ln;
+    
+	j = ft_count(n);
+	if (!n)
+		return ("0");
+	ln = n;
+	str = malloc(j + 1 * sizeof(char));
+	if (!str)
+		return (NULL);
+	str[j--] = '\0';
+	if (ln < 0)
+	{
+		str[0] = '-';
+		ln *= -1;
+	}
+	while (ln != 0)
+	{
+		str[j--] = ln % 10 + '0';
+		ln /= 10;
+	}
+	return (str);
 }

@@ -6,12 +6,13 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:25:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/17 14:52:40 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 13:25:19 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar_fd(char c, int fd)
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
 {
-    c = 'c';
-    fd  = 1;
+	write(fd, &c, 1);
 }

@@ -6,12 +6,20 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:25:45 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/17 14:53:05 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/23 13:25:52 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr_fd(char *s, int fd)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-    s = "s";
-    fd = 1;
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
