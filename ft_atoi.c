@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:17:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/18 13:29:13 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/24 16:15:51 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,11 @@ int	ft_atoi(const char *src)
 	v = v * s;
 	return (v);
 }
+/*
+int main(void)
+{
+	char *str = "  -1234";
+	printf("%d\n", ft_atoi(str));
+	return (0);
+}
+*/
