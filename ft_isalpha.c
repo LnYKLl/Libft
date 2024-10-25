@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:03:09 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/25 13:36:43 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 16:04:47 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,3 @@ int	ft_isalpha(int str)
 	else
 		return (0);
 }
-/*
-int main (void)
-{
-	char test1 = 'A';
-	char test2 = '1';
-	char test3 = 'z';
-
-	printf("Is '%c' an alphabetic character? %d\n", test1, ft_isalpha(test1));
-	printf("Is '%c' an alphabetic character? %d\n", test2, ft_isalpha(test2));
-	printf("Is '%c' an alphabetic character? %d\n", test3, ft_isalpha(test3));
-
-	return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:39:09 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/24 16:17:51 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 16:04:44 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,3 @@ int	ft_isalnum(char str)
 	else
 		return (0);
 }
-/*
-int main(void)
-{
-	char test1 = 'a';
-	char test2 = '1';
-	char test3 = '#';
-
-	printf("Test with 'a': %d\n", ft_isalnum(test1)); // Should print 1
-	printf("Test with '1': %d\n", ft_isalnum(test2)); // Should print 1
-	printf("Test with '#': %d\n", ft_isalnum(test3)); // Should print 0
-
-	return 0;
-}
-*/

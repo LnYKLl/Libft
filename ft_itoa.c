@@ -6,13 +6,13 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:23:44 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/25 13:35:45 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 16:04:59 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count(long n)
+static int	ft_count(long n)
 {
 	int	count;
 
@@ -58,14 +58,4 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
-int	main(void)
-{
-	int		nombre;
-	char	*chaine;
 
-	nombre = -2147483648;
-	chaine = ft_itoa(nombre);
-	printf("Le nombre %d converti en chaîne est : %s\n", nombre, chaine);
-}
-*/
