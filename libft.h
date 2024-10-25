@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/24 16:17:16 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 13:37:07 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 # define LIBFT_H
 
-//# include <stdio.h>
+# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
 int					ft_isalnum(char str);
-int					ft_isalpha(char str);
+int					ft_isalpha(int str);
 int					ft_isascii(int i);
 int					ft_isdigit(int i);
 void				*ft_calloc(size_t nmemb, size_t size);

@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:23:44 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/24 16:20:16 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 13:35:45 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ int	ft_count(long n)
 
 	count = 0;
 	if (!n)
-		return (0);
-	if (n == 0)
-		return (count);
+		return (1);
 	if (n < 0)
 	{
 		n *= -1;
@@ -41,13 +39,13 @@ char	*ft_itoa(int n)
 	long	ln;
 
 	j = ft_count(n);
-	if (!n)
-		return ("0");
 	ln = n;
 	str = malloc(j + 1 * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[j--] = '\0';
+	if (ln == 0)
+		str[0] = '0';
 	if (ln < 0)
 	{
 		str[0] = '-';
@@ -61,11 +59,13 @@ char	*ft_itoa(int n)
 	return (str);
 }
 /*
-int main(void)
+int	main(void)
 {
-	int nombre = -12345;
-	char *chaine = ft_itoa(nombre);
+	int		nombre;
+	char	*chaine;
+
+	nombre = -2147483648;
+	chaine = ft_itoa(nombre);
 	printf("Le nombre %d converti en chaîne est : %s\n", nombre, chaine);
-	free(chaine);
 }
 */

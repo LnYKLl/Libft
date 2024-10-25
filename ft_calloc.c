@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:37:30 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/23 14:57:36 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 13:12:23 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	unsigned char	*t;
 	size_t			i;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
 	if (nmemb * size > 2147483647)
 		return (NULL);
 	t = malloc(nmemb * size);

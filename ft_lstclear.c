@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:50:00 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/24 15:03:11 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/25 13:41:12 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
     {
         tmp = (*lst)->next;
         del((*lst)->content);
+		free(*lst);
         *lst = tmp;
     }
-    free(*lst);
     *lst = NULL;
 }
