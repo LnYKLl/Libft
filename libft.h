@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:58:42 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/25 16:05:28 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/26 15:32:31 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int					ft_isascii(int i);
 int					ft_isdigit(int i);
 void				*ft_calloc(size_t nmemb, size_t size);
 int					ft_isprint(int i);
-int					ft_strlen(char *str);
+size_t				ft_strlen(char *str);
 void				*ft_memset(void *b, int c, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t n);
