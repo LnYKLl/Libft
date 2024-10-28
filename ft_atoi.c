@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:17:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/28 13:00:06 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:06:14 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *src)
 {
 	int	i;
-	int v;
+	long v;
 	int	s;
 
 	i = 0;
@@ -36,13 +36,7 @@ int	ft_atoi(const char *src)
 		if (v * s > 2147483647)
 			return (-1);
 		if (v * s < -2147483648)
-			return (0);
+			return (1);
 	}
 	return (v = v * s);
-}
-#include <stdio.h>
-int main()
-{
-	printf("%d\n", ft_atoi("+2147483647"));
-	printf("%d\n", atoi("+2147483647"));
 }
