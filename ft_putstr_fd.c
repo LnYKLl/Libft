@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:25:45 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/28 14:05:28 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:08:30 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	if (!s || !fd)
-		return;
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

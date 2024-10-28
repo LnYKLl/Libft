@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:26:28 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/28 14:05:15 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:08:41 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	t;
+
 	if (!n || !fd)
-		return;
+		return ;
 	if (n == 0)
 	{
 		write(fd, "0", 1);

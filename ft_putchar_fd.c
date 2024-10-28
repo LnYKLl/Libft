@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:25:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/28 14:04:30 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:08:06 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void	ft_putchar_fd(char c, int fd)
 {
 	if (!c || !fd)
-		return;
+		return ;
 	write(fd, &c, 1);
 }

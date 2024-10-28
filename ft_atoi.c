@@ -6,7 +6,7 @@
 /*   By: lkiloul <lkiloul@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:17:23 by lkiloul           #+#    #+#             */
-/*   Updated: 2024/10/28 14:06:14 by lkiloul          ###   ########.fr       */
+/*   Updated: 2024/10/28 14:07:44 by lkiloul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *src)
 {
-	int	i;
-	long v;
-	int	s;
+	int		i;
+	long	v;
+	int		s;
 
 	i = 0;
 	v = 0;
